@@ -1,11 +1,11 @@
 {
-    "name": "vita/laravel simple file manager",
+    "name": "viettuans/laravel-file-manager",
     "description": "Manager file as simple way in Laravel",
     "keywords": [
-        "vita",
-        "laravel simple file manager"
+        "viettuans",
+        "laravel-file-manager"
     ],
-    "homepage": "https://github.com/vita/laravel simple file manager",
+    "homepage": "https://github.com/viettuanit/laravel-file-manager",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Vita\\LaravelSimpleFileManager\\": "src"
+            "Viettuans\\LaravelSimpleFileManager\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vita\\LaravelSimpleFileManager\\Tests\\": "tests"
+            "Viettuans\\LaravelSimpleFileManager\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vita\\LaravelSimpleFileManager\\LaravelSimpleFileManagerServiceProvider"
+                "Viettuans\\LaravelSimpleFileManager\\LaravelSimpleFileManagerServiceProvider"
             ],
             "aliases": {
-                "LaravelSimpleFileManager": "Vita\\LaravelSimpleFileManager\\LaravelSimpleFileManagerFacade"
+                "LaravelSimpleFileManager": "Viettuans\\LaravelSimpleFileManager\\LaravelSimpleFileManagerFacade"
             }
         }
     }

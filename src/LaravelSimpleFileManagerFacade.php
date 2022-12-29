@@ -1,11 +1,11 @@
 <?php
 
-namespace Vita\LaravelSimpleFileManager;
+namespace Viettuans\LaravelSimpleFileManager;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Vita\LaravelSimpleFileManager\Skeleton\SkeletonClass
+ * @see \Viettuans\LaravelSimpleFileManager\Skeleton\SkeletonClass
  */
 class LaravelSimpleFileManagerFacade extends Facade
 {
@@ -16,6 +16,6 @@ class LaravelSimpleFileManagerFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravel simple file manager';
+        return 'laravel-file-manager';
     }
 }

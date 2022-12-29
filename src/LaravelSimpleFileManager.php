@@ -1,6 +1,6 @@
 <?php
 
-namespace Vita\LaravelSimpleFileManager;
+namespace Viettuans\LaravelSimpleFileManager;
 
 class LaravelSimpleFileManager
 {

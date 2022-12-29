@@ -1,8 +1,8 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/vita/laravel simple file manager.svg?style=flat-square)](https://packagist.org/packages/vita/laravel simple file manager)
-[![Total Downloads](https://img.shields.io/packagist/dt/vita/laravel simple file manager.svg?style=flat-square)](https://packagist.org/packages/vita/laravel simple file manager)
-![GitHub Actions](https://github.com/vita/laravel simple file manager/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/viettuans/laravel-file-manager.svg?style=flat-square)](https://packagist.org/packages/viettuans/laravel-file-manager)
+[![Total Downloads](https://img.shields.io/packagist/dt/viettuans/laravel-file-manager.svg?style=flat-square)](https://packagist.org/packages/viettuans/laravel-file-manager)
+![GitHub Actions](https://github.com/viettuans/laravel-file-manager/actions/workflows/main.yml/badge.svg)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
@@ -11,7 +11,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require vita/simple-file-manager
+composer require viettuans/simple-file-manager
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ If you discover any security related issues, please email viet.tuan.9210@gmail.c
 
 ## Credits
 
--   [Viet Tuan](https://github.com/vita)
+-   [Viet Tuan](https://github.com/viettuans)
 -   [All Contributors](../../contributors)
 
 ## License
