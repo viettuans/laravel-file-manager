@@ -1,6 +1,6 @@
 <?php
 
-namespace Viettuans\FileManager;
+namespace Viettuans\FileManager\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

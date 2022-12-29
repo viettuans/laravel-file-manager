@@ -14,7 +14,7 @@ class FileManagerServiceProvider extends ServiceProvider
         /*
          * Optional methods to load your package assets
          */
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'file-manager');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'fm');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'file-manager');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutesFrom(__DIR__.'/routes.php');
