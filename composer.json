@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Viettuans\\LaravelSimpleFileManager\\": "src"
+            "Viettuans\\FileManager\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Viettuans\\LaravelSimpleFileManager\\Tests\\": "tests"
+            "Viettuans\\FileManager\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Viettuans\\LaravelSimpleFileManager\\LaravelSimpleFileManagerServiceProvider"
+                "Viettuans\\FileManager\\FileManagerServiceProvider"
             ],
             "aliases": {
-                "LaravelSimpleFileManager": "Viettuans\\LaravelSimpleFileManager\\LaravelSimpleFileManagerFacade"
+                "FileManager": "Viettuans\\FileManager\\Facades\\FileManager"
             }
         }
     }
