@@ -13,13 +13,26 @@ class CreateMediaTable extends Migration
      */
     public function up()
     {
-        Schema::create('media', function (Blueprint $table) {
+        $tableName = config('filemanager.table_name', 'media');
+        
+        Schema::create($tableName, function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('path')->nullable();
-            $table->integer('size')->nullable();
-            $table->string('mime_type', 15)->nullable();
+            $table->string('name')->index();
+            $table->string('original_name');
+            $table->string('path')->unique();
+            $table->unsignedBigInteger('size')->nullable()->index();
+            $table->string('mime_type', 100)->index();
+            $table->string('extension', 10)->index();
+            $table->string('disk', 50)->default('public');
+            $table->string('thumbnail_path')->nullable();
+            $table->string('alt_text')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
+
+            // Add indexes for better performance
+            $table->index(['mime_type', 'created_at']);
+            $table->index(['extension', 'created_at']);
+            $table->index(['size', 'created_at']);
         });
     }
 
@@ -30,6 +43,7 @@ class CreateMediaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('media');
+        $tableName = config('filemanager.table_name', 'media');
+        Schema::dropIfExists($tableName);
     }
 }
